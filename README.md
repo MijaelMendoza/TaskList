@@ -18,6 +18,13 @@ Como equipo planeamos desarrollar el programa en el trascurso de la semana, desd
 - Pantalla principal
 - Pantalla de ver/añadir tareas
 
+## Clases
+- Main
+- Conexion
+- Task
+- Task UI Principal
+- Task UI de ver/añadir tareas
+
 ## Ramas
 - Main
 - Base de Datos
