@@ -36,4 +36,26 @@ Como equipo planeamos desarrollar el programa en el trascurso de la semana, desd
 - Cesar Vera (Base de Datos)
 - Christian Mendoza (Clases)
 - Ignacio Garcia (Diseño)
+- 
+ ## Configuración del Proyecto
+Para utilizar este programa, sigue los pasos a continuación:
 
+1. Crear la Base de Datos en PostgreSQL
+Abre tu cliente de PostgreSQL y ejecuta el script SQL proporcionado en el archivo nombre_del_archivo.sql en la carpeta database del repositorio.
+2. Modificar la Clase de Conexión
+Abre el archivo Conexion.java ubicado en src/Conexion.java.
+Cambia la contraseña en la línea correspondiente con las credenciales de tu base de datos PostgreSQL.
+
+
+// Conexion.java
+
+private static final String URL = "jdbc:postgresql://localhost:5432/tu_basededatos";
+private static final String USER = "tu_usuario";
+private static final String PASSWORD = "tu_contraseña";
+
+
+3. Agregar la Librería al Build Path
+Incluye la librería postgresql-42.7.0.jar en la carpeta lib en el Build Path de tu proyecto.
+4. Ejecutar el Programa
+Compila y ejecuta tu programa Java.
+5. ¡Disfruta!
