@@ -12,7 +12,7 @@ Como equipo planeamos desarrollar el programa en el trascurso de la semana, desd
 - 16/02/2024: definición de actividades correspondientes a cada miembro del equipo.
 - 19/02/2024: primera presentacion para el desarrollo
 - 20/02/2024: segunda presentacion para el desarrollo
-- 21/02/2024: ultima presentacion para el desarrollo y merge en main
+- 22/02/2024: ultima presentacion para el desarrollo y merge en main
 
 ## Diseño
 - Pantalla principal
