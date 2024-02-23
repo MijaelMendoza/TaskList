@@ -105,7 +105,9 @@ class Ventana_Principal implements ActionListener {
 
         if (tareas.isEmpty()) {
             mostrarMensaje("No hay tareas en este estado.");
+            tablaTareas.setVisible(false);
         } else {
+        	tablaTareas.setVisible(true);
             // Crear un modelo de tabla y asignar los datos de las tareas
             TareaTableModel modeloTabla = new TareaTableModel(tareas);
             tablaTareas.setModel(modeloTabla);
@@ -155,8 +157,9 @@ class Ventana_Principal implements ActionListener {
 	private void mostrarVentanaDetalles(String accion) {
 		try {
 			List<Tarea> todasLasTareas = tareaDAO.obtenerTareas();
-
+			tablaTareas.setVisible(true);
 			if (todasLasTareas.isEmpty()) {
+				tablaTareas.setVisible(false);
 				mostrarMensaje("No hay tareas disponibles.");
 				return;
 			}
@@ -166,11 +169,13 @@ class Ventana_Principal implements ActionListener {
 			for (Tarea tarea : todasLasTareas) {
 				if (!(tarea.getEstado().equals("Completada") && accion.equals("Marcar tarea como completada"))
 						&& !(tarea.getEstado().equals("Eliminada") && accion.equals("Eliminar tarea"))) {
+					
 					tareasDisponibles.add(tarea);
 				}
 			}
 
 			if (tareasDisponibles.isEmpty()) {
+				tablaTareas.setVisible(false);
 				mostrarMensaje("No hay tareas disponibles para esta acción.");
 				return;
 			}
