@@ -55,7 +55,7 @@ private static final String PASSWORD = "tu_contraseña";
 
 
 3. Agregar la Librería al Build Path
-Incluye la librería postgresql-42.7.0.jar en la carpeta lib en el Build Path de tu proyecto.
+Incluye la librería postgresql-42.7.0.jar, en el Build Path de tu proyecto.
 4. Ejecutar el Programa
 Compila y ejecuta tu programa Java.
 5. ¡Disfruta!
